@@ -118,6 +118,9 @@ export default {
   cursor: pointer;
   background-color: var(--grey-color);
   border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 25px;
   padding: 10px;
   font-size: 1rem;
