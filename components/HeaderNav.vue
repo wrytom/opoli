@@ -23,7 +23,7 @@ export default {
   }, {
     opacity: 1,
     duration: 1,
-    delay: 4
+    delay: 2.5
   });
 
   }
