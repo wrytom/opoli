@@ -55,7 +55,15 @@ export default {
   backdrop-filter: blur(13px);
   background-color: rgb(13,13,13,0.5);
   color: white;
+  transition: all 0.3s ease;
 }
+
+.call-button:hover {
+  background-color: rgb(13,13,13,0.4);
+  scale: 0.97;
+  transition: all 0.3s ease;
+}
+  
 .overlay {
   position: fixed;
   top: 0;
