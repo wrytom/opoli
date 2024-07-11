@@ -41,7 +41,7 @@
   opacity: 0;
 }
 .title {
-  font-size: 5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Unbounded", sans-serif;
@@ -73,17 +73,17 @@ export default {
     requestAnimationFrame(() => {
       gsap.timeline()
         .to(".line1", { height: '100%', zIndex:1,duration: 1.2, opacity: 1 })
-        .to(".caption", { opacity: 1,zIndex:1, duration: 0.75 }, '-=0.25')
-        .to(".line2", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.25')
-        .to(".title", { opacity: 1, zIndex:1,duration: 0.75 }, '-=0.25') 
+        .to(".caption", { opacity: 1,zIndex:1, duration: 0.75 }, '-=0.5')
+        .to(".line2", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.5')
+        .to(".title", { opacity: 1, zIndex:1, fontSize: '5rem',duration: 0.75 }, '-=0.5') 
         .to(".background-overlay", { 
           opacity: 0, 
-          duration: 0.75, 
+          duration: 0.5, 
           onComplete: () => {
             gsap.set(".background-overlay", { display: "none" });
           }
-        }, '-=0.5') 
-        .to(".line3", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.25');
+        }, '-=0.15') 
+        .to(".line3", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.5');
     });
   }
 }
