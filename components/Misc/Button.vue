@@ -190,12 +190,20 @@ export default {
     bottom: -2%;
     border-radius: 20px 20px 0 0;
   }
-  .lower {
-    margin-bottom: 20px;
-  }
+  
   .call-button {
     font-size: 0.9rem;
   }
+
+  @keyframes slideInWobble {
+  0% {
+    transform: translateY(100%);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
 }
 </style>
 
