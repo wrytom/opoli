@@ -50,7 +50,7 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   text-decoration: none;
   backdrop-filter: blur(13px);
   background-color: rgb(13,13,13,0.5);
