@@ -190,6 +190,14 @@ export default {
     bottom: -2%;
     border-radius: 20px 20px 0 0;
   }
+
+  .bottom-sheet-enter-active {
+  animation: slideInWobble 0.5s ease-out;
+}
+
+  .lower {
+    margin-bottom: 20px;
+  }
   
   .call-button {
     font-size: 0.9rem;
