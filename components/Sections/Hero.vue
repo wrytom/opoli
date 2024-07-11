@@ -34,6 +34,7 @@
 }
 .caption, .title, .line {
   position: relative;
+  z-index: 2;
 }
 .caption {
   text-transform: uppercase;
@@ -74,15 +75,15 @@ export default {
         .to(".line1", { height: '100%', duration: 1.2, opacity: 1 })
         .to(".caption", { opacity: 1, duration: 0.75 }, '-=0.25')
         .to(".line2", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.25')
+        .to(".title", { opacity: 1, duration: 0.75 }, '-=0.25') 
         .to(".background-overlay", { 
           opacity: 0, 
-          duration: 0.75,
+          duration: 0.75, 
           onComplete: () => {
             gsap.set(".background-overlay", { display: "none" });
           }
-        })
-        .to(".title", { opacity: 1, duration: 0.75 }, '-=0.25')
-        .to(".line3", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.25');
+        }, '-=0.25') 
+        .to(".line3", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.15');
     });
   }
 }
