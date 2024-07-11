@@ -88,6 +88,7 @@ export default {
 .sheet-content .upper,
 .sheet-content .lower {
   display: flex;
+  z-index: 1111;
 }
 .sheet-content .upper {
   align-items: center;
@@ -98,6 +99,7 @@ export default {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: "Unbounded", sans-serif;
+  z-index: 1111;
 }
 .sheet-content .lower {
   flex-direction: column;
@@ -106,9 +108,11 @@ export default {
 .lower h2,
 .lower p {
   color: var(--text-color);
+  z-index: 1111;
 }
 .phone-p {
   margin-bottom: 1rem;
+  z-index: 1111;
 }
 .close-button {
   cursor: pointer;
@@ -127,6 +131,7 @@ export default {
   padding: 15px 20px;
   border-radius: 10px;
   text-decoration: none;
+  z-index: 1111;
 }
 .phone-call:nth-of-type(1) {
   background-color: var(--text-color);
