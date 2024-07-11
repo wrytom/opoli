@@ -83,7 +83,7 @@ export default {
             gsap.set(".background-overlay", { display: "none" });
           }
         }, '-=0.25') 
-        .to(".line3", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.15');
+        .to(".line3", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.5');
     });
   }
 }
