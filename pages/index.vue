@@ -24,7 +24,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'canonical', href: 'opoli.eu' },
+    { rel: 'canonical', href: 'https://opoli.eu' },
     { rel: 'icon', href: 'https://cdn-icons-png.flaticon.com/512/3522/3522558.png', type: 'image/x-icon' }
   ],
   htmlAttrs: {
