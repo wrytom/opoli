@@ -70,19 +70,21 @@ import { gsap } from "gsap";
 
 export default {
   mounted() {
-    gsap.timeline()
-      .to(".line1", { height: '100%', duration: 1.5, opacity: 1 })
-      .to(".caption", { opacity: 1, duration: 1 }, '-=0.5')
-      .to(".line2", { height: '100%', duration: 1, opacity: 1 }, '-=0.5')
-      .to(".background-overlay", { 
-        opacity: 0, 
-        duration: 1, 
-        onComplete: () => {
-          gsap.set(".background-overlay", { display: "none" });
-        }
-      })
-      .to(".title", { opacity: 1, duration: 1 }, '-=0.5')
-      .to(".line3", { height: '100%', duration: 1, opacity: 1 }, '-=0.5');
+    requestAnimationFrame(() => {
+      gsap.timeline()
+        .to(".line1", { height: '100%', duration: 1.2, opacity: 1 })
+        .to(".caption", { opacity: 1, duration: 0.5 }, '-=0.25')
+        .to(".line2", { height: '100%', duration: 0.5, opacity: 1 }, '-=0.25')
+        .to(".background-overlay", { 
+          opacity: 0, 
+          duration: 0.5, 
+          onComplete: () => {
+            gsap.set(".background-overlay", { display: "none" });
+          }
+        })
+        .to(".title", { opacity: 1, duration: 0.5 }, '-=0.25')
+        .to(".line3", { height: '100%', duration: 0.5, opacity: 1 }, '-=0.25');
+    });
   }
 }
 </script>
