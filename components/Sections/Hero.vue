@@ -55,6 +55,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
+    height: 100dvh;
     background-size: 300%;
     background-attachment: fixed;
   }
@@ -75,7 +76,7 @@ export default {
         .to(".line1", { height: '100%', zIndex:1,duration: 1.2, opacity: 1 })
         .to(".caption", { opacity: 1,zIndex:1, duration: 0.75 }, '-=0.5')
         .to(".line2", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.5')
-        .to(".title", { opacity: 1, zIndex:1, fontSize: '5rem',duration: 0.75 }, '-=0.5') 
+        .to(".hero.title", { opacity: 1, zIndex:1, fontSize: '5rem',duration: 0.75 }, '-=0.5') 
         .to(".background-overlay", { 
           opacity: 0, 
           duration: 0.5, 
