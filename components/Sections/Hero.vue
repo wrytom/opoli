@@ -34,7 +34,6 @@
 }
 .caption, .title, .line {
   position: relative;
-  z-index: 2;
 }
 .caption {
   text-transform: uppercase;
