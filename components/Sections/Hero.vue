@@ -72,18 +72,18 @@ export default {
   mounted() {
     requestAnimationFrame(() => {
       gsap.timeline()
-        .to(".line1", { height: '100%', duration: 1.2, opacity: 1 })
-        .to(".caption", { opacity: 1, duration: 0.75 }, '-=0.25')
-        .to(".line2", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.25')
-        .to(".title", { opacity: 1, duration: 0.75 }, '-=0.25') 
+        .to(".line1", { height: '100%', zIndex:1,duration: 1.2, opacity: 1 })
+        .to(".caption", { opacity: 1,zIndex:1, duration: 0.75 }, '-=0.25')
+        .to(".line2", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.25')
+        .to(".title", { opacity: 1, zIndex:1,duration: 0.75 }, '-=0.25') 
         .to(".background-overlay", { 
           opacity: 0, 
           duration: 0.75, 
           onComplete: () => {
             gsap.set(".background-overlay", { display: "none" });
           }
-        }, '-=0.25') 
-        .to(".line3", { height: '100%', duration: 0.75, opacity: 1 }, '-=0.5');
+        }, '-=0.5') 
+        .to(".line3", { height: '100%', zIndex:1,duration: 0.75, opacity: 1 }, '-=0.25');
     });
   }
 }
