@@ -83,6 +83,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  z-index: 5;
 }
 .sheet-content .upper,
 .sheet-content .lower {
