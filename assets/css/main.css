@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import 'primeicons/primeicons.css';
+
+:root {
+    --background-color: #fff;
+    --text-color: #0d0d0d;
+    --grey-color: #ededed;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .half {
+        width: 100%;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+}
