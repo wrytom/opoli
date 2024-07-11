@@ -187,9 +187,6 @@ export default {
   .call-button {
     font-size: 0.9rem;
   }
-  .close-button {
-    padding: 8px 10px;
-  }
 }
 </style>
 
