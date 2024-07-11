@@ -2,7 +2,7 @@
     <section class="contact" id="contact">
       <div class="contact-line"></div>
       <div class="contact-caption"><p>За да разберете как Ополи може да ви помогне с вашите строителни проекти, свържете се с нас </p>
-        <MiscButton style="background-color: rgb(255,255,255,0.5); border-radius: 10px" />
+        <MiscButton style="background-color: rgb(255,255,255,0.5); border-radius: 50px" />
       </div>
       <div class="contact-line"></div>
       <h1 class="contact-title">Ополи</h1>
